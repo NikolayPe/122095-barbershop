@@ -47,16 +47,85 @@
       <li>
         <a href="catalog.html">Магазин</a>
       </li>
-      <li class="breadcrumbs-current">Средства для ухода</li>
+      <li class="breadcrumbs-current">
+        <a>Средства для ухода</a>
+      </li>
     </ul>
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
       <h3>Производители:</h3>
-      <!-- Здесь будет форма -->
-      <h3>Группы товаров:</h3>
-      <!-- Здесь будет форма -->
-      <button class="filter-apply">Показать</button>
+
+      <form method="GET" action="https://echo.htmlacademy.ru">
+
+        <ul class="manufacturer-list">
+
+          <li class="filter-item">
+            <label>
+              <input type="checkbox" name="manufacturer-1"> Baxter of California
+            </label>
+          </li>
+
+          <li class="manufacturer-item">
+            <label>
+              <input type="checkbox" name="manufacturer-2"> MR Natty
+            </label>
+          </li>
+
+          <li class="manufacturer-item">
+            <label>
+              <input type="checkbox" name="manufacturer-3"> Suavecito
+            </label>
+          </li>
+
+          <li class="manufacturer-item">
+            <label>
+              <input type="checkbox" name="manufacturer-4"> Malin+Goetz
+            </label>
+          </li>
+
+          <li class="manufacturer-item">
+            <label>
+              <input type="checkbox" name="manufacturer-5"> Murray's
+            </label>
+          </li>
+
+          <li class="manufacturer-item">
+            <label>
+              <input type="checkbox" name="manufacturer-6"> American Crew
+            </label>
+          </li>
+
+        </ul>
+
+        <h3>Группы товаров:</h3>
+
+        <ul class="product-group-list">
+
+          <li class="product-group-item">
+            <label>
+              <input type="radio" name="product-group"> Бритвенные принадлежности
+            </label>
+          </li>
+
+          <li class="product-group-item">
+            <label>
+              <input type="radio" name="product-group"> Средства для ухода
+            </label>
+          </li>
+
+          <li class="product-group-item">
+            <label>
+              <input type="radio" name="product-group"> Аксессуары
+            </label>
+          </li>
+
+        </ul>
+
+        <button type="submit" class="filters-apply">Показать</button>
+
+      </form>
+
     </section>
 
     <section class="catalog">
@@ -228,10 +297,36 @@
   </footer>
 
   <section class="modal modal-login">
+
     <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
-    <!-- Здесь будет форма -->
-    <span class="modal-close">x</span>
+    <p>Введите пожалуйста свой логин и пароль.</p>
+
+    <form class="user" method="POST" action="https://echo.htmlacademy.ru">
+
+      <p>
+        <label>
+          Логин:
+          <input type="text" name="login" placeholder="Логин">
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Пароль:
+          <input type="password" name="password" placeholder="Пароль">
+        </label>
+      </p>
+
+      <label>
+        <input type="checkbox" name="remember"> Запомните меня
+      </label>
+      <a href="#">Я забыл пароль!</a>
+
+      <button type="submit">Войти</button>
+    </form>
+
+    <button class="modal-close" type="button">Закрыть окно авторизации</button>
+
   </section>
 
 
