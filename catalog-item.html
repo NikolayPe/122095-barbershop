@@ -64,13 +64,19 @@
 
       <ul class="product-photo-preview">
         <li>
-          <img src="img/product-item-small-1.png" width="140" height="149" alt="Фото в анфас">
+          <button>
+            <img src="img/product-item-small-1.png" width="140" height="149" alt="Фото в анфас">
+          </button>
         </li>
         <li>
-          <img src="img/product-item-small-2.png" width="140" height="149" alt="Фото в профиль">
+          <button>
+            <img src="img/product-item-small-2.png" width="140" height="149" alt="Фото в профиль">
+          </button>
         </li>
         <li>
-          <img src="img/product-item-small-3.png" width="140" height="149" alt="Фото отдельной части">
+          <button>
+            <img src="img/product-item-small-3.png" width="140" height="149" alt="Фото отдельной части">
+          </button>
         </li>
       </ul>
 
@@ -82,9 +88,7 @@
       <p class="product-availability">
         Есть в наличии
       </p>
-      <p class="product-article">
-        Артикул: Dexter-ae
-      </p>
+      <p class="product-article">Артикул: Dexter-ae</p>
       <p>Travel kit - необходимый аксессуар во время любого путешествия.
         В аккуратной кожанной сумке находится все, что нужно для бритья
         и ухода за кожей во время рабочей поездки или отдыха: средство
@@ -137,11 +141,37 @@
   </footer>
 
   <section class="modal modal-login">
-      <h2>Личный кабинет</h2>
-      <p>Введите свой логин и пароль.</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
-    </section>
+
+    <h2>Личный кабинет</h2>
+    <p>Введите пожалуйста свой логин и пароль.</p>
+
+    <form class="user" method="POST" action="https://echo.htmlacademy.ru">
+
+      <p>
+        <label>
+          Логин:
+          <input type="text" name="login" placeholder="Логин">
+        </label>
+      </p>
+
+      <p>
+        <label>
+          Пароль:
+          <input type="password" name="password" placeholder="Пароль">
+        </label>
+      </p>
+
+      <label>
+        <input type="checkbox" name="remember"> Запомните меня
+      </label>
+      <a href="#">Я забыл пароль!</a>
+
+      <button type="submit">Войти</button>
+    </form>
+
+    <button class="modal-close" type="button">Закрыть окно авторизации</button>
+
+  </section>
 
 </body>
 
