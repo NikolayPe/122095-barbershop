@@ -206,5 +206,122 @@ a {
   text-decoration: none;
 }
 
+.page-title {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.breadcrumbs-list {
+  list-style: none;
+}
+
+.breadcrumbs-item a {
+  line-height: 20px;
+  color: #000000;
+}
+
+.breadcrumbs-item a:hover,
+.breadcrumbs-item a:focus {
+  text-decoration: underline;
+}
+
+.breadcrumbs-current {
+  color: #aba9a7;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.filters ul {
+  line-height: 18px;
+  list-style: none;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #663d15;
+}
+
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.5;
+}
+
+.catalog-list {
+  list-style: none;  
+}
+
+.catalog-list li {
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.catalog-list li:hover {
+  box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.3);
+}
+
+.catalog-header {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog-header a {
+  color: #000000;
+}
+
+.catalog-header a:hover,
+.catalog-header a:focus {
+  color: #000000;
+}
+
+.catalog-category {
+  text-transform: none;
+}
+
+.catalog-price b {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  background-color: #e5e5e5;
+}
+
+.catalog-price .button {
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-list a {
+  color: #ffffff;
+
+  background-color: #000000;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus,
+.pagination-list a:active {
+  background-color: #663d15;
+}
+
+a.pagination-current {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+a.pagination-current:hover,
+a.pagination-current:focus,
+a.pagination-current:active {
+  background-color: #ffffff;
+}
 
 
