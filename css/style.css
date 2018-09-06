@@ -18,9 +18,6 @@ body {
   color: #000000;
 
   background-color: #f8f5f2;
-  background-image: url("../img/columns-background.png");
-  background-position: 0 0;
-  background-repeat: repeat;
 }
 
 .container {
@@ -56,6 +53,13 @@ a {
   margin-bottom: 75px;
 }
 
+.inner-page .main-header {
+  /* width: 1200px; */
+  margin: 0 auto;
+
+  background-color: #000000;
+}
+
 .main-navigation {
   display: flex;
   flex-direction: column;
@@ -66,11 +70,27 @@ a {
   color: #ffffff;
 }
 
+.inner-page .main-navigation {
+  flex-direction: row;
+
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .main-header-logo {
   order: 2;
 
   width: 371px;
   height: 155px;
+}
+
+.inner-page .main-header-logo {
+  order: 0;
+
+  width: 111px;
+  height: 24px;
+  padding: 23px 20px;
 }
 
 .main-navigation-wrapper {
@@ -101,6 +121,10 @@ a {
 
 .user-navigation {
   width: 140px;
+}
+
+.inner-page .user-navigation {
+  margin-left: auto;
 }
 
 .site-navigation a,
@@ -214,6 +238,13 @@ a {
   background-repeat: repeat;
 }
 
+.inner-page .main-footer {
+  /* width: 1200px; */
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
 .main-footer .container {
   display: flex;
 }
@@ -305,12 +336,30 @@ a {
 }
 
 
+.inner-page .main-container {
+  /* width: 1200px; */
+  margin: 0 auto;
+  padding: 50px 0;
+
+  background-image: url("../img/columns-background.png");
+  background-position: 0 0;
+  background-repeat: repeat;
+}
+
 .page-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
   font-size: 30px;
   line-height: 42px;
 }
 
 .breadcrumbs-list {
+  width: 300px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -326,6 +375,15 @@ a {
 
 .breadcrumbs-current {
   color: #aba9a7;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filters {
+  width: 220px;
 }
 
 .filters fieldset {
@@ -352,12 +410,32 @@ a {
   opacity: 0.5;
 }
 
+.catalog {
+  width: 700px;
+}
+
 .catalog-list {
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
   list-style: none;  
 }
 
 .catalog-list li {
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+
   box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.catalog-list li:nth-child(3n) {
+  margin-right: 0;
 }
 
 .catalog-list li:hover {
@@ -396,10 +474,18 @@ a {
 }
 
 .pagination-list {
+  display: flex;
+
+  width: 220px;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
 .pagination-list a {
+  margin-right: 7px;
+
   color: #ffffff;
 
   background-color: #000000;
