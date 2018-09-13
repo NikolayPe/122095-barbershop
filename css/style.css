@@ -583,13 +583,19 @@ img {
 }
 
 .breadcrumbs-list {
+  display: flex;
   margin: 0;
+  margin-bottom: 50px;
   padding: 0;
 
   list-style: none;
 }
 
 .breadcrumbs-item a {
+  position: relative;
+
+  margin-right: 40px;
+
   line-height: 20px;
   color: #000000;
 }
@@ -601,6 +607,18 @@ img {
 
 .breadcrumbs-current {
   color: #aba9a7;
+}
+
+.breadcrumbs-item a::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: -25px;
+
+  width: 10px;
+  height: 10px;
+
+  background-image: url("../img/breadcrumbs-rhomb.svg");
 }
 
 .catalog-columns {
