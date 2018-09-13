@@ -216,8 +216,33 @@ img {
 }
 
 .feature-item h3 {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 65px;
+
   font-size: 30px;
   line-height: 42px;
+}
+
+.feature-item h3::after {
+  content: "";
+
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+
+  margin-left: -15px;
+  width: 30px;
+  height: 30px;
+
+  background-image: url("../img/index-rhomb.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.feature-item p {
+  margin: 0 10px;
 }
 
 .index-columns {
