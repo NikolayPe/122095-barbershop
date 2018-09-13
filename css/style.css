@@ -30,6 +30,27 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   font: inherit;
 
@@ -115,10 +136,15 @@ a {
 }
 
 .site-navigation {
+  display: flex;
+  flex-wrap: wrap;
   width: 620px;
 }
 
 .user-navigation {
+  display: flex;
+  justify-content: flex-end;
+
   width: 140px;
 }
 
@@ -128,7 +154,38 @@ a {
 
 .site-navigation a,
 .user-navigation a {
+  display: block;
+
+  padding: 25px 20px;
+  
+  vertical-align: middle;
   color: #ffffff;
+}
+
+.user-navigation .login-link {
+  position: relative;
+
+  padding-left: 50px;
+}
+
+.login-link::before {
+  content: "";
+  position: absolute;
+  left: 24px;
+  top: 27px;
+
+  width: 16px;
+  height: 18px;
+
+  background-image: url("../img/login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
+  opacity: 0.3;
+}
+
+.login-link:hover::before{
+  opacity: 1;
 }
 
 .site-navigation a:hover,
