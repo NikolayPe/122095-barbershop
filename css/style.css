@@ -52,8 +52,11 @@ img {
 }
 
 .button {
-  font: inherit;
+  display: inline-block;
+  margin-right: 16px;
+  padding: 10px 30px;
 
+  font: inherit;
   text-transform: uppercase;
   text-align: center;
   vertical-align: middle;
@@ -67,6 +70,13 @@ img {
 .button:focus,
 .button:active {
   background-color: #663d15;
+}
+
+.button.disabled,
+.button:disabled {
+  cursor: default;
+  opacity: 0.5;
+  background-color: #000000;
 }
 
 
@@ -255,12 +265,24 @@ img {
   color: #000000;
 
   background-color: #f8f5f2;
-  background-image: url("../img/columns-background.png");
-  background-position: 0 0;
-  background-repeat: repeat;
+  background-image: 
+  url("../img/vertical-shadow.png"),
+    url("../img/columns-background.png")
+  ;
+  background-position: 
+    center,
+    0 0
+  ;
+  background-repeat:
+    no-repeat,
+    repeat
+  ;
 }
 
 .index-columns h2 {
+  margin: 0;
+  margin-bottom: 25px;
+
   font-size: 30px;
   line-height: 42px;
 }
@@ -270,7 +292,19 @@ img {
 }
 
 .news-list {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+
   list-style: none;
+}
+
+.news-item {
+  margin-bottom: 25px;
+}
+
+.news-item p {
+  margin: 0;
 }
 
 .news-item time {
@@ -281,21 +315,86 @@ img {
   width: 300px;
 }
 
+.gallery-container {
+  position: relative;
+
+  height: 260px;
+}
+
 .gallery-content {
+  height: 164px;
+
+  margin: 0;
   border: 7px solid #ffffff;
 
   background-color: #a79e8c;
+}
+
+.gallery-content img {
+  width: 286px;
+  height: 164px;
+}
+
+.gallery-button {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 0;
+
+  width: 140px;
+  margin: 0;
+}
+
+.gallery-button-back {
+  left: 0;
+}
+
+.gallery-button-next {
+  right: 0;
 }
 
 .contacts {
   width: 380px;
 }
 
+.contacts p {
+  margin-bottom: 20px;
+}
+
 .appointment {
   width: 300px;
 }
 
+.appointment-info {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.appointment-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.appointment-item {
+  width: 140px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.appointment-item label {
+  display: block;
+  margin-bottom: 9px;
+  margin-left: 15px;
+}
+
 .appointment-form input {
+  box-sizing: border-box;
+  width: 140px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 7px;
+  padding-left: 7px;
+
   font: inherit;
 
   border: 2px solid #000000;
@@ -304,6 +403,13 @@ img {
 
 .appointment-form input:focus {
   border: 2px solid #663d15;
+}
+
+.appointment .button {
+  display: block;
+  width: 100%;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .main-footer {
