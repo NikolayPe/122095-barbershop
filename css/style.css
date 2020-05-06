@@ -10,7 +10,7 @@ body {
   text-transform: uppercase;
 
   background: #000000;
-  background-image: url("../img/Main-background.jpg");
+  background-image: url("../img/main-background.jpg");
   background-repeat: no-repeat;
 }
 
@@ -171,7 +171,7 @@ input[type="radio"].visually-hidden {
   display: block;
 
   padding: 25px 20px;
-  
+
   vertical-align: middle;
   color: #ffffff;
 }
@@ -269,11 +269,11 @@ input[type="radio"].visually-hidden {
   color: #000000;
 
   background-color: #f8f5f2;
-  background-image: 
+  background-image:
   url("../img/vertical-shadow.png"),
     url("../img/columns-background.png")
   ;
-  background-position: 
+  background-position:
     center,
     0 0
   ;
@@ -474,7 +474,7 @@ input[type="radio"].visually-hidden {
   margin: 0 auto;
   padding: 0;
 
-  list-style: none; 
+  list-style: none;
 }
 
 .social-btn {
@@ -530,7 +530,7 @@ input[type="radio"].visually-hidden {
   }
 
   70% {
-    transform: translateY(30px);    
+    transform: translateY(30px);
   }
 
   90% {
@@ -965,7 +965,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 25px;
   padding: 0;
 
-  list-style: none;  
+  list-style: none;
 }
 
 .catalog-list li {
@@ -1217,4 +1217,3 @@ a.pagination-current:active {
 
   transform: rotate(-45deg);
 }
-
