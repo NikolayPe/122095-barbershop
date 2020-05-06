@@ -1,4 +1,4 @@
-# barbarshop
+# Barbershop
 
 Project for mastering base html&css
 
